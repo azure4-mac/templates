@@ -1,0 +1,64 @@
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--surface-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.newGameButton {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.newGameButton:hover {
+    background-color: #2563eb; /* Um tom de azul um pouco mais escuro */
+    text-decoration: none;
+}
+
+.gamesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gameItem {
+    padding: 1rem;
+    background-color: var(--background-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gameItem h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Estilos para os botões de ação que você pode adicionar no futuro */
+.actions a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,35 @@
+.header {
+    background-color: #222831;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden; /* Clearfix */
+}
+
+.header h1 {
+    float: left;
+    color: #FFC107;
+}
+
+.header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}

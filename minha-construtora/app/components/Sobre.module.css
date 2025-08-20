@@ -1,0 +1,13 @@
+.sobre {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sobre h3 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #222831;
+    border-bottom: 3px solid #FFC107;
+    display: inline-block;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraculum - Tradutor de Hieróglifos</title>
+    <!-- Inclui o Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclui a biblioteca de ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Adiciona uma fonte mais agradável */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+
+    <!-- Cabeçalho -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">Oraculum</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">O Projeto</a>
+                <a href="#funcionalidades" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Funcionalidades</a>
+                <a href="#tecnologia" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Tecnologia</a>
+                <a href="#download" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Download</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden z-50">
+                <i data-lucide="menu" class="text-white"></i>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen bg-gray-900 flex-col items-center justify-center space-y-8 text-2xl">
+            <a href="#sobre" class="mobile-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">O Projeto</a>
+            <a href="#funcionalidades" class="mobile-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Funcionalidades</a>
+            <a href="#tecnologia" class="mobile-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Tecnologia</a>
+            <a href="#download" class="mobile-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">Download</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1)), url('https://placehold.co/1920x1080/111827/111827?text=.')">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    Cada tradução, uma nova descoberta.
+                </h2>
+                <p class="text-2xl md:text-3xl text-cyan-400 font-light max-w-3xl mx-auto mb-10">
+                    O ORACULUM torna o passado mais presente!
+                </p>
+                <a href="#sobre" class="bg-cyan-500 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg hover:bg-cyan-400 transition-colors duration-300">
+                    Conheça o Projeto
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre o Projeto -->
+        <section id="sobre" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">O Projeto Oraculum</h2>
+                <div class="w-24 h-1 bg-cyan-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    Nascido da paixão pela história do Egito Antigo e do desafio de decifrar sua escrita complexa, o Oraculum utiliza Inteligência Artificial para tornar a tradução de hieróglifos acessível a todos. É um convite para explorar e entender uma das civilizações mais fascinantes da humanidade através da tecnologia.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Funcionalidades -->
+        <section id="funcionalidades" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Funcionalidades Principais</h2>
+                    <div class="w-24 h-1 bg-cyan-500 mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex-shrink-0 flex justify-center mb-4"><i data-lucide="upload" class="text-cyan-400 w-10 h-10"></i></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Tradução por Imagem</h3>
+                        <p class="text-gray-300 flex-grow">Envie uma imagem da sua galeria. Nossa IA analisa e traduz os hieróglifos detectados em segundos.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex-shrink-0 flex justify-center mb-4"><i data-lucide="brain-circuit" class="text-cyan-400 w-10 h-10"></i></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">IA Especializada</h3>
+                        <p class="text-gray-300 flex-grow">Potencializado pelo Gemini, o avançado modelo de IA do Google, nosso sistema foi adaptado para a tarefa de reconhecer e interpretar os símbolos da escrita egípcia.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex-shrink-0 flex justify-center mb-4"><i data-lucide="camera" class="text-cyan-400 w-10 h-10"></i></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2">Interface Simples</h3>
+                        <p class="text-gray-300 flex-grow">Uma interface limpa e direta ao ponto, focada em proporcionar a melhor experiência de tradução para curiosos e especialistas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Como Funciona -->
+        <section id="como-funciona" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Como Funciona</h2>
+                    <div class="w-24 h-1 bg-cyan-500 mx-auto"></div>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-700 -translate-y-1/2"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gray-800 p-4 rounded-full mb-4 border-2 border-cyan-500"><i data-lucide="file-image" class="text-cyan-400 w-8 h-8"></i></div>
+                            <h3 class="text-lg font-semibold text-white">1. Prepare a Imagem</h3>
+                            <p class="text-gray-400 mt-1">Tenha uma imagem clara e bem iluminada dos hieróglifos que você deseja traduzir.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gray-800 p-4 rounded-full mb-4 border-2 border-cyan-500"><i data-lucide="search" class="text-cyan-400 w-8 h-8"></i></div>
+                            <h3 class="text-lg font-semibold text-white">2. Carregue no App</h3>
+                            <p class="text-gray-400 mt-1">Faça o upload do arquivo de imagem diretamente na interface do aplicativo.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gray-800 p-4 rounded-full mb-4 border-2 border-cyan-500"><i data-lucide="check-circle" class="text-cyan-400 w-8 h-8"></i></div>
+                            <h3 class="text-lg font-semibold text-white">3. Receba a Tradução</h3>
+                            <p class="text-gray-400 mt-1">Em instantes, nosso modelo processa a imagem e exibe o texto correspondente em português.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Tecnologia -->
+        <section id="tecnologia" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">A Tecnologia por Trás do Oraculum</h2>
+                <div class="w-24 h-1 bg-cyan-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-300 max-w-4xl mx-auto mb-12">
+                    O Oraculum é uma fusão de duas áreas tecnológicas: uma poderosa Inteligência Artificial para a tradução e uma interface web moderna para a sua experiência.
+                </p>
+                <div class="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto">
+                    <div class="bg-gray-900 p-8 rounded-lg flex-1 text-left">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="cpu" class="text-cyan-400 w-8 h-8 mr-4"></i>
+                            <h3 class="text-2xl font-bold">O Tradutor: Inteligência Artificial</h3>
+                        </div>
+                        <p class="text-gray-300">
+                            O núcleo da tradução é o <strong>Gemini, o modelo de IA multimodal do Google</strong>. Através de <strong>Python e TensorFlow</strong>, nós especializamos e ajustamos este poderoso modelo para analisar imagens e decifrar os padrões complexos dos hieróglifos, realizando a 'mágica' da tradução.
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg flex-1 text-left">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="globe" class="text-cyan-400 w-8 h-8 mr-4"></i>
+                            <h3 class="text-2xl font-bold">O Website: Tecnologia Web</h3>
+                        </div>
+                        <p class="text-gray-300">
+                            Para garantir uma experiência rápida, bonita e responsiva em qualquer dispositivo, este site foi desenvolvido com as tecnologias mais modernas do mercado web: <strong>React</strong> para a estrutura dinâmica e <strong>Tailwind CSS</strong> para o design elegante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Download -->
+        <section id="download" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">Faça o Download do Oraculum</h2>
+                <div class="w-24 h-1 bg-cyan-500 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-10">
+                    Clique no botão abaixo para baixar a versão mais recente do aplicativo.
+                </p>
+                <a href="#" download class="inline-flex items-center justify-center bg-cyan-500 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl hover:bg-cyan-400 transition-colors duration-300">
+                    <i data-lucide="download" class="w-6 h-6 mr-3"></i>
+                    Download do App
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800/50 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">
+                © 2024 Oraculum. Desenvolvido por A. Aschenatto.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Ativa os ícones do Lucide
+        lucide.createIcons();
+
+        // Lógica para o menu mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    </script>
+
+</body>
+</html>

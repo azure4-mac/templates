@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://placehold.co/600x300/1e1e1e/c0c0c0?text=Azure4-Mac's%0ATemplates" alt="Logo" width="200"> <h1 align="center">Coleção de Templates por Azure4-Mac </h1> <p align="center"> Uma coleção de templates otimizados para acelerar o desenvolvimento de projetos. <br /><br /> <a href="https://github.com/azure4-mac/templates/issues">Reportar Bug</a> · <a href="https://github.com/azure4-mac/templates/issues">Sugerir Feature</a> </p> </div>
+<h1 align="center">Coleção de Templates por Azure4-Mac </h1> <p align="center"> Uma coleção de templates otimizados para acelerar o desenvolvimento de projetos. <br /><br /> <a href="https://github.com/azure4-mac/templates/issues">Reportar Bug</a> · <a href="https://github.com/azure4-mac/templates/issues">Sugerir Feature</a> </p> </div>
 🎯 Sobre o Projeto
 
 Este repositório foi criado para resolver um problema comum: ter um ponto de partida sólido para novos projetos.

@@ -1,29 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Next.js
 
-## Getting Started
+Este é um projeto [Next.js](https://nextjs.org) inicializado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+## 🛠️ Instalação
 
+Para configurar o projeto localmente, siga os passos abaixo. Certifique-se de ter o **Node.js** instalado.
+
+1. **Clone o repositório:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [URL_DO_SEU_REPOSITORIO]
+cd [NOME_DO_SEU_REPOSITORIO]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Instale as dependências:**
+```bash
+npm install
+yarn install
+pnpm install
+bun install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ▶️ Como Começar
+1. **Servidor de Desenvolvimento**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra http://localhost:3000
+. Edite app/page.tsx e veja as alterações automaticamente.
 
-## Learn More
+2. **Build e Produção**
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Para iniciar o servidor com a versão de produção:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔤 Fontes
+Este projeto utiliza next/font
+ para carregar automaticamente a fonte Geist.
 
+ ## 📚 Saiba Mais
+* Documentação do [Next.js](https://nextjs.org/docs)
+* Aprenda [Next.js](https://nextjs.org/learn)

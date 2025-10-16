@@ -9,9 +9,6 @@ Para configurar o projeto localmente, siga os passos abaixo. Certifique-se de te
 1. **Instale as dependências:**
 ```bash
 npm install
-yarn install
-pnpm install
-bun install
 ```
 
 ## ▶️ Como Começar

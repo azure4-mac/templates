@@ -6,13 +6,7 @@ Este é um projeto [Next.js](https://nextjs.org) inicializado com [`create-next-
 
 Para configurar o projeto localmente, siga os passos abaixo. Certifique-se de ter o **Node.js** instalado.
 
-1. **Clone o repositório:**
-```bash
-git clone [URL_DO_SEU_REPOSITORIO]
-cd [NOME_DO_SEU_REPOSITORIO]
-```
-
-2. **Instale as dependências:**
+1. **Instale as dependências:**
 ```bash
 npm install
 yarn install

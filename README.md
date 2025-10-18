@@ -70,5 +70,3 @@ Push para a Branch (```git push origin feature/MeuTemplateIncrivel```)
 Abra um Pull Request
 
 Certifique-se de que seu template tenha um README.md explicando como usá-lo.
-
-<div align="center"> <p>Feito com ❤️ para a comunidade.</p> </div>
